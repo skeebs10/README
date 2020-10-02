@@ -44,6 +44,8 @@ Color Pallet:
 
 #### User stories
 
+As an user I expect to see a button bla bla bla bla
+
 #### Development Plan 
 
 description of your development plan 
