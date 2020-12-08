@@ -1,0 +1,45 @@
+*, *::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+html {
+    font-size:10px;   
+}
+body {
+    box-sizing: inherit;
+}
+body {
+    background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#modal {
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100vw;
+    height:100vh;
+    background-color: rgba(222,184,135,0.4);
+    justify-content: center;
+    align-items: center;
+    display: none; /*set this to none so that the modal does not show initially on page load*/
+    z-index: 1;
+}
+#modal-textbox {
+    background-color: #ddb892;
+    height:350px;
+    width: 550px;
+    border-radius: 2px;
+    margin: 18px;
+    
+} 
+#modal h1, p {
+    color: white;
+}
+
+
+/* 
+@media only screen and (min-width:768px) { */
