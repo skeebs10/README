@@ -11,38 +11,64 @@
         <script src="app.js"></script>
 
     </head>
-    <body>
-        <button id='openModal'> Brew-les</button>
-        <div id ="modal">
-            <div id="modal-textbox">
-            <button id="close" href="#">Let's Brew It</button>
-            <h1>Hello Coffee Lovers!</h1>
-                <p>This game is designed to test your knowledge on various types of coffee drinks served in coffeeshops worldwide! <br>
-                Given 3 beans at the start, you the barista, will be asked to pick the correct coffee type for each given recipe.<br>
-                We're stirring this up! Lose a bean for every incorrect match. You only have 3 beans to complete this <br>10 drink menu and to be crowned "Barista Expertisa".</p>    
+    <body> 
+        <!-- Game Console Panel -->
+        <div class= "container">
+            <div id ="home" class="flex-column">
+                <h1>Barista Expertista</h1>
+                <button id= 'startButton'>Play</button>
+                <button id='openModal'> BREW-LES</button>
+                <div id ="modal">
+                <div id="modal-textbox">
+                <button id="close" href="#">Let's Brew It</button>
+                <h1>Hello Coffee Lovers!</h1>
+                    <p>This game is designed to test your knowledge on various types of coffee drinks served in coffeeshops worldwide! <br>
+                    Given 3 beans at the start, you the barista, will be asked to pick the correct coffee type for each given recipe.<br>
+                    We're stirring this up! Lose a bean for every incorrect match. You only have 3 beans to complete this <br>10 drink menu and to be crowned "Barista Expertisa".</p>    
+            </div>
+        </div>
+        <!-- Game Console Panel -->
+        <div class= "game-container">
+            <div id ="game" class="justify-center flex-column">
+                <div id ="header">
+                    <div class="header-item">
+                        <p id="progressText" class="header-prefix">Question</p>
+                        <div id="progressBar">
+                            <div id="progressBarFull"></div>
+                        </div>
+                    </div>
+                    <div class="header-item">
+                        <p class="header-prefix">Score</p>
+                        <h1 class="header-main-text" id="score">3</h1>
+                    </div>
+                </div>
+                <div class= "coffee-menu">
+                    <div class="title">Coffee Menu</div>
+                    <div id="coffee-images">
+                        <img src="Espresso.png" alt="espresso">
+                        <img src="Americano.png" alt="americano">
+                        <img src= "Cafe au Lait.png" alt="cafe au lait">
+                        <img src="Caffe Breve.png" alt="caffe breve">
+                        <img src= "Caffe Latte.png" alt="caffe latte">
+                        <img src="Caffe Mocha.png" alt="caffe mocha">
+                        <img src="Espresso con Panna.png" alt="espresso con panna">
+                        <img src="Espresso Macchiato.png" alt="espresso macchiato">
+                        <img src="Flat White.png" alt="flat white">
+                        <img src="Latte Machiato.png" alt="latte machiato">
+                        <img src="Red Eye.png" alt="red eye">
+                    </div>
+                </div>
+        
+                <div class="choice-buttons">
+                    <button class= "choice-text" data-number ="1"></button> 
+                </div>
+                <div class="choice-buttons">
+                    <button class= "choice-text" data-number ="2"></button>
+                </div>
+                <div class="choice-buttons">
+                    <button class= "choice-text" data-number ="3"></button>    
+                </div>
             </div>
         </div>
     </body>
 </html>
-
-
-    <!-- <div class="container">
-            <div id ="home" class="flex-column flex-center">
-                <h1>Barista <br> Expertista</h1>
-                <a href="/module.html" class="btn">Play</a>
-            </div> -->
-                <!-- <span>Hello Coffee Lovers!</span>
-            </div> -->
-        <!-- </div class="info-list">
-        <div class="info"> This game is designed to test your knowledge on various types of 
-            coffee drinks served in coffeeshops worldwide! You the barista will be 
-            tasked with selecting the correct coffee type for each given recipe. 
-            Lose a point for every incorrect match. Keep in mind that you 
-            only have 3 points to complete this 10 drink menu and be
-            crowned "Barista Expertisa".
-        </div> 
-        <div class="buttons">
-            <button class="quit">Quit</button>
-            <button class="restart">Continue</button>
-            </div>
-        <div>
