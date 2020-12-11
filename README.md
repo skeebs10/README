@@ -1,35 +1,36 @@
+# App Title: Barista Expertista
 
-# App Title: 
-
-### App Demo: www.linkegoeshere.com
-
----
+https://git.generalassemb.ly/skeebs10/Barista-Expertista-
 
 ## Concept:
 
-A full description of what your project is all about 
+This game is designed to test your knowledge on various types of 
+coffee drinks served in coffeeshops worldwide! You (the barista) will be 
+tasked with selecting the correct coffee type for each given recipe. 
+For every incorrect match, you lose a point. Keep in mind that you 
+only have 3 points to complete this 10 drink menu and be
+crowned "Barista Expertisa"!
+
 
 ## Technologies Used:
 
 * HTML
 * CSS
 * JavaScript 
+* JQuery 
 * External JavaScript Library
 
 ##### Credits:
-
-    Unsplash.com
-    unDraw.co
-    Slideshow Repo
+Class lecture (Carrousal)
 
 ## Approach:
 
 #### Overview
-Description of how you approach the game development. Here you will add all the development phases, from wireframes to code sample. 
-
 #### Wireframe
 
 <img src="https://res.cloudinary.com/duprwuo4j/image/upload/v1601671860/DesignOne_uevwek.png" width="80%" >
+
+This is handrawn I will upload a photo. 
 
 Color Pallet:
 
@@ -50,10 +51,10 @@ As an user I expect to see a button bla bla bla bla
 
 description of your development plan 
 
-* Development Plan  ONE
-* Development Plan  Two
-* Development Plan  Three 
-* Development Plan  Four
+* Development Plan  ONE- Wire Frames
+* Development Plan  Two - HTML
+* Development Plan  Three-HTML/CSS
+* Development Plan  Four JQUERY
 
 #### MVP
 
@@ -71,7 +72,7 @@ description of your development plan
 
 ## Challenges:
 
-Small description of a challange you faced. 
+I want to incorporate the carrousal theme into my project!! I keep going back to the drawing board and starting over.
 
 
 
