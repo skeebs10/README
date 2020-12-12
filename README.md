@@ -25,7 +25,7 @@ I will approach this with wireframes and arrays. Created two players (barista 1 
 
 #### Wireframe
 
-<img src="https://res.cloudinary.com/duprwuo4j/image/upload/v1601671860/DesignOne_uevwek.png" width="80%" >
+<img src="/Wireframe drawn.png">
 
 This is handrawn I will upload a photo. 
 
