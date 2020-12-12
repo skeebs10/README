@@ -31,18 +31,11 @@ This is handrawn I will upload a photo.
 
 Color Pallet:
 
-```
-    #5d5174
-    #9680a4
-    #e2deea
-    #545454
-    #e4e0dd
-    #ffffff
-```
+I'll be looking through browns in coolors.com.
 
 #### User stories
 
-As an user I expect to see a button bla bla bla bla
+As an user I expect to navigate through the game with a start, next, and restart button. The bean count will change as the game goes on. I expect this game to be extremely difficult as I chose the most random coffee types. 
 
 #### Development Plan 
 
