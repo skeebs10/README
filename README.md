@@ -1,6 +1,6 @@
 # App Title: Barista Expertista
 
-https://git.generalassemb.ly/skeebs10/Barista-Expertista-
+https://github.com/skeebs10/README.git
 
 ## Concept:
 
@@ -48,8 +48,8 @@ As an user I expect to see a button bla bla bla bla
 description of your development plan 
 
 * Development Plan  ONE- I will brainstorm, do research, and wireframe the best way to make it interactive. I am very inspired with a project I saw in class from last semester and super excited to try and complete a coffee game being a coffee enthusiast!
-* Development Plan  Two - The plan for HTML is create a game like console. 
-* Development Plan  Three-HTML/CSS
+* Development Plan  Two - The plan for HTML is create a game like console. I will plan to create a container with the score on top, picture displayed in the middle and a bottom of consol controls or buttons.
+* Development Plan  Three-HTML/CSS I will play around with css and try to add cool features. Definitely feeling a brown theme since this is a coffee game. I found a webiste called coolors where I will look for trendy patterns for flow. 
 * Development Plan  Four JQUERY
 
 #### MVP
@@ -72,4 +72,4 @@ I really wanted to incorporate the corgi carousel jquery exercise we did in clas
 
 
 
-### App Demo: www.linkegoeshere.com
+### App Demo: 
