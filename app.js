@@ -1,5 +1,5 @@
 $(() => {
-    // Questions in Array//////
+    // Questions in Array
     const questions = [
         {
             image: "images/Espresso.png",
@@ -86,15 +86,15 @@ $(() => {
 
 
     // Variables
-    const highestIndex = questions.length -1;
+    const highestIndex = questions.length;
     let currentQuestionIndex = 0;
-    let ifCorrect = false;
+    let isCorrect = false;
 
     // Player Class
     class Player {
         constructor(name, beans) {
             this.name = name;
-            this.bean = bean; //beans are points
+            this.beans = beans.toString(); //beans are points
         }
     }
 
@@ -110,12 +110,10 @@ $(() => {
         $btn1.remove('hide');
         $btn2.remove('hide');
         $imageContainer.remove('hide');
-        $nextButton.remove('hide');
 
         $btn1.addClass('show');
         $btn2.addClass('show');
         $imageContainer.addClass('show');
-        $nextButton.addClass('show');
 
         setNextQuestion();
     }
@@ -132,28 +130,51 @@ $(() => {
     }
 
     const setChoice1 = () => {
-        alert(questions[currentQuestionIndex]["answers"][0]['correct']);
-/*        if(ifCorrect){
-
-        }*/
+/*        alert(questions[currentQuestionIndex]["answers"][0]['correct']);*/
+        if(currentQuestionIndex >= highestIndex) {
+            alert("YOU WON!");
+        }else{
+            isCorrect = questions[currentQuestionIndex]["answers"][0]['correct'];
+            $nextButton.click();
+        }
     }
     const setChoice2 = () => {
-        alert(questions[currentQuestionIndex]["answers"][1]['correct2']);
-/*        if(ifCorrect){
-
-        }*/
+/*        alert(questions[currentQuestionIndex]["answers"][1]['correct2']);*/
+        if(currentQuestionIndex >= highestIndex) {
+            alert("YOU WON!");
+        }else{
+            isCorrect = questions[currentQuestionIndex]["answers"][1]['correct2'];
+            $nextButton.click();
+        }
     }
 
 
     // Show Next Image
     const nextImg = () => {
         currentQuestionIndex++;
-        let tempImg = questions[currentQuestionIndex]["image"];
-        $imageContainer.attr("src", tempImg);
-        showQuestion(currentQuestionIndex);
 
+        if(currentQuestionIndex >= highestIndex && barista1.beans > 0) {
+            alert("YOU WON!");
+        }else if(currentQuestionIndex < highestIndex){
+            if(barista1.beans <= 0){
+                alert("You lost.")
+            }else{
+                let tempImg = questions[currentQuestionIndex]["image"];
+                $imageContainer.attr("src", tempImg);
+                showQuestion(currentQuestionIndex);
+                if(isCorrect){
 
-    // question.eq(currentQuestionIndex).css('display', 'none');
+                }else{
+                    barista1.beans = barista1.beans - 1;
+                    $points.html("<h3>" + barista1.beans + "</h3>")
+                    if(barista1.beans <= 0){
+                        alert("You lost.")
+                    }
+                }
+
+            }
+        }
+
 
 /*
         if(currentQuestionIndex < highestIndex) {
@@ -197,6 +218,8 @@ $(() => {
         $btn1.on('click', setChoice1);
         $btn2.on('click', setChoice2);
 });
+
+
 
 
 

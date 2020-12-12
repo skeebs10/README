@@ -20,8 +20,9 @@ For every incorrect match, you lose a point. If you lose all your points you hav
 
 
 ## Approach:
-
+I will approach this with wireframes and arrays. Created two players (barista 1 & 2) and add two answer options to choose from each round. If you lose all beans you go back to start. Want ot make this game all coffee theme. 
 #### Overview
+
 #### Wireframe
 
 <img src="https://res.cloudinary.com/duprwuo4j/image/upload/v1601671860/DesignOne_uevwek.png" width="80%" >
@@ -45,26 +46,24 @@ As an user I expect to see a button bla bla bla bla
 
 #### Development Plan 
 
-description of your development plan 
-
 * Development Plan  ONE- I will brainstorm, do research, and wireframe the best way to make it interactive. I am very inspired with a project I saw in class from last semester and super excited to try and complete a coffee game being a coffee enthusiast!
 * Development Plan  Two - The plan for HTML is create a game like console. I will plan to create a container with the score on top, picture displayed in the middle and a bottom of consol controls or buttons.
 * Development Plan  Three-HTML/CSS I will play around with css and try to add cool features. Definitely feeling a brown theme since this is a coffee game. I found a webiste called coolors where I will look for trendy patterns for flow. 
-* Development Plan  Four JQUERY
+* Development Plan  Four - For JQUERY, I will go ahead and create and array of objects where I will store each question similar to a powerpoint. I will not loop but use the next button to move along with the coutner. 
 
 #### MVP
 
-* MVP ONE
-* MVP Two
-* MVP Three 
+* MVP ONE- Getting all the image in the correct position.
+* MVP Two- Creeating an interactive but hard game. I hoping 25% of people pass. 
+* MVP Three - using a class player in this game. In my head it's more of a single player challenge. I guess that's the challenge! Compared it to blackjack when you play the house or in this case coffeehouse
 * MVP Four
 
 #### Stretch goals
 
-* Stretch goals ONE- 
-* Stretch goals Two
-* Stretch goals Three 
-* Stretch goals Four
+* Stretch goals ONE- Go back and figure out how to loop 
+* Stretch goals Two- Apply Carrousal lesson and loop through 
+* Stretch goals Three- Make it very interactive. 
+* Stretch goals Four- Never enough visuals!
 
 ## Challenges:
 
