@@ -1,80 +1,79 @@
 $(() => {
-    // Questions in Array
+    // Questions in Array//////
     const questions = [
         {
             image: "images/Espresso.png",
             answers: [
                 { text: 'Espresso', correct: true, points: 0},
-                { text: 'Cortado', correct: false, points: -1 },
+                { text2: 'Cortado', correct2: false, points2: -1 },
             ]
         },
         {
             image: "images/Americano.png",
             answers: [
                 { text: 'Affogato', correct: false, points: -1},
-                { text: 'Americano', correct: true, points: 0 },
+                { text2: 'Americano', correct2: true, points2: 0 },
             ]
         },
         {
             image:"images/Cafe au Lait.png",
             answers: [
                 { text: 'Affogato', correct: false, points: -1},
-                { text: 'Cafe au Lait', correct: true, points: 0 },
+                { text2: 'Cafe au Lait', correct2: true, points2: 0 },
             ]
         },
         {
             image: "images/Caffe Breve.png" ,
             answers: [
                 { text: 'Breve', correct: true, points: 0 },
-                { text: 'Cold Brew', correct: false, points: -1},
+                { text2: 'Cold Brew', correct2: false, points2: -1},
             ]
         },
         {
             image: "images/Caffe Latte.png" ,
             answers: [
                 { text: 'Caffe Latte', correct: true, points: 0 },
-                { text: 'Irish Coffee', correct: false, points: -1 },
+                { text2: 'Irish Coffee', correct2: false, points2: -1 },
             ]
         },
         {
             image: "images/Caffe Mocha.png",
             answers: [
                 { text: 'Lungo', correct: false, points: -1 },
-                { text: 'Caffe Mocha', correct: true, points: 0},
+                { text2: 'Caffe Mocha', correct2: true, points2: 0},
             ]
         },
         {
             image: "images/Espresso con Panna.png",
             answers: [
                 { text: 'Con Panna', correct: true, points: 0 },
-                { text: 'Flat White', correct: false, points: -1 }
+                { text2: 'Flat White', correct2: false, points2: -1 }
             ]
         },
         {
             image: "images/Espresso Macchiato.png" ,
             answers: [
                 { text: "Machiato", correct: true, points: 0},
-                { text: 'Mocha', correct: false, points: -1 },
+                { text2: 'Mocha', correct2: false, points2: -1 },
             ]
         },
         {
             image: "images/Flat White.png",
             answers: [
                 { text: 'Doppio', correct: false, points: -1},
-                { text: 'Flat White', correct: true, points: 0 },
+                { text2: 'Flat White', correct2: true, points2: 0 },
             ]
         },
         {
             image: "images/Red Eye.png" ,
             answers: [
                 { text: 'Red Eye', correct: true, points: 0 },
-                { text: 'Ristretto', correct: false, points: -1 },
+                { text2: 'Ristretto', correct2: false, points2: -1 },
             ]
         }
     ]
 
     // Cached Dom Nodes
-    let $questions = questions;
     const $startButton = $('#start-btn');
     const $nextButton = $('#next-btn');
     const $questionImage = $('#question-image');
@@ -87,11 +86,11 @@ $(() => {
 
 
     // Variables
-    const highestIndex = $questions.length -1;
+    const highestIndex = questions.length -1;
     let currentQuestionIndex = 0;
+    let ifCorrect = false;
 
     // Player Class
-
     class Player {
         constructor(name, beans) {
             this.name = name;
@@ -124,8 +123,81 @@ $(() => {
     function showQuestion(q) {
         console.log("next")
         console.log(q);
+        $btn1.html(questions[q]["answers"][0]['text']);
+        $btn2.html(questions[q]["answers"][1]['text2']);
     };
 
     const setNextQuestion = () => {
         showQuestion(currentQuestionIndex);
     }
+
+    const setChoice1 = () => {
+        alert(questions[currentQuestionIndex]["answers"][0]['correct']);
+/*        if(ifCorrect){
+
+        }*/
+    }
+    const setChoice2 = () => {
+        alert(questions[currentQuestionIndex]["answers"][1]['correct2']);
+/*        if(ifCorrect){
+
+        }*/
+    }
+
+
+    // Show Next Image
+    const nextImg = () => {
+        currentQuestionIndex++;
+        let tempImg = questions[currentQuestionIndex]["image"];
+        $imageContainer.attr("src", tempImg);
+        showQuestion(currentQuestionIndex);
+
+
+    // question.eq(currentQuestionIndex).css('display', 'none');
+
+/*
+        if(currentQuestionIndex < highestIndex) {
+            currentQuestionsIndex ++;
+        } else {
+            currentQuestionIndex = 0;
+        }
+
+        questions.eq(currentImgIndex).css('display', 'block');
+
+
+        showQuestion(question);
+
+     //Loop over each card in the array and add event listener to flip cards
+     questions.forEach(question => {
+         question.on('click') () => {
+             game.flipCard(question);
+         })
+     })
+*/
+
+
+/*     (if points.length === 0) &&  {
+         alert(Sorry Try Again!){
+         } else if ()
+     }*/
+
+     // You barista if you get 0 points before game is over you lose and barista wins
+
+/*
+     checkPoints(bartisa1, barista2)
+         if(barista1)
+*/
+
+
+    }
+
+        // EVENT LISTENERS
+        $startButton.on('click', startGame)
+        $nextButton.on('click', nextImg);
+        $btn1.on('click', setChoice1);
+        $btn2.on('click', setChoice2);
+});
+
+
+
+

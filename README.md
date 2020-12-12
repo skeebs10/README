@@ -4,12 +4,8 @@ https://git.generalassemb.ly/skeebs10/Barista-Expertista-
 
 ## Concept:
 
-This game is designed to test your knowledge on various types of 
-coffee drinks served in coffeeshops worldwide! You (the barista) will be 
-tasked with selecting the correct coffee type for each given recipe. 
-For every incorrect match, you lose a point. Keep in mind that you 
-only have 3 points to complete this 10 drink menu and be
-crowned "Barista Expertisa"!
+This game is designed to test your knowledge on various types of coffee drinks served in coffeeshops worldwide! You (Barista 1) will be up against the coffeehouse (Barista 2) and tasked with selecting the correct coffee type for each given recipe. 
+For every incorrect match, you lose a point. If you lose all your points you have to restart the game and the coffeehouse (Baritsa 2 wns!). Keep in mind that you only have 3 points to complete this 10 drink menu and be crowned the ultimate "Barista Expertisa"! Feel free to restart the challenge if you make it to the end. Good luck!
 
 
 ## Technologies Used:
@@ -21,7 +17,7 @@ crowned "Barista Expertisa"!
 * External JavaScript Library
 
 ##### Credits:
-Class lecture (Carrousal)
+
 
 ## Approach:
 
@@ -51,8 +47,8 @@ As an user I expect to see a button bla bla bla bla
 
 description of your development plan 
 
-* Development Plan  ONE- Wire Frames
-* Development Plan  Two - HTML
+* Development Plan  ONE- I will brainstorm, do research, and wireframe the best way to make it interactive. I am very inspired with a project I saw in class from last semester and super excited to try and complete a coffee game being a coffee enthusiast!
+* Development Plan  Two - The plan for HTML is create a game like console. 
 * Development Plan  Three-HTML/CSS
 * Development Plan  Four JQUERY
 
@@ -65,15 +61,14 @@ description of your development plan
 
 #### Stretch goals
 
-* Stretch goals ONE
+* Stretch goals ONE- 
 * Stretch goals Two
 * Stretch goals Three 
 * Stretch goals Four
 
 ## Challenges:
 
-I want to incorporate the carrousal theme into my project!! I keep going back to the drawing board and starting over.
-
+I really wanted to incorporate the corgi carousel jquery exercise we did in class for my project. Unfortunately I could not figure out how to use it for my game given. Found it easier to create an array of objects. This project was tough. I changed my mind multiple time and lost a few days of work just by starting over and going to the drawing board. Also not sure if I was committing correctly going between the Github enterprise and my git. I revisited class lectures frequently which was time consuming.
 
 
 
