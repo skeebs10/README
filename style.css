@@ -99,7 +99,7 @@ body.wrong {
     width: 100%;
     border-radius: 10px;
 }
-.coffee-images img first-of-type {
+.coffee-images img: first-of-type {
     display: block;
 }
 
