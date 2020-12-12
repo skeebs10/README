@@ -79,8 +79,9 @@ $(() => {
     const $questionImage = $('#question-image');
     const $answerButtons= $('#answer-buttons');
     const $progressBarFull = $('#progressBarFull'); 
-    const $modalText =$('modal-box');
-    const $openModal =$('rules-btn');
+    const $modal = $('#modal');
+    const $modalBox =$('#modal-box');
+    const $openModal =$('#rules-btn');
     const $closeModal =$('#close');
     const $points= $('#bean');
     const $btn1= $('#btn1');
@@ -194,7 +195,7 @@ $(() => {
     }
     const setChoice2 = () => {
         if(currentQuestionIndex >= highestIndex) {
-            alert("YOU WON!");
+            alert("YOU ARE THE QUEEN BEAN! HOUSE BARISTA LOST");
             restart();
         }else{
             isCorrect = questions[currentQuestionIndex]["answers"][1]['correct2'];
@@ -211,7 +212,7 @@ $(() => {
             restart();
         }else if(currentQuestionIndex < highestIndex){
             if(barista1.beans <= 0){
-                alert("YOU LOST! HOUSE BARISTA WON");
+                alert("YOU LOST! HOUSE BARISTA WON!");
                 restart();
             }else{
                 let tempImg = questions[currentQuestionIndex]["image"];
@@ -223,7 +224,7 @@ $(() => {
                     barista1.beans = barista1.beans - 1;
                     $points.html("<h3>" + barista1.beans + "</h3>")
                     if(barista1.beans <= 0){
-                        alert("You lost.");
+                        alert("YOU LOST! HOUSE BARISTA WON!");
                         restart();
                     }
                 }
